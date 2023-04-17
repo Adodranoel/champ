@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/*корректное отображение блоков во весь экран и посередине*/
+	min-width: 100%;
+	margin: 0;
+	
+	font-family: 'Press Start 2P';
+}
+div {
+	/*фон*/
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+	
+	/*настройки самого блока*/
+	position: relative;
+    height: 800px;
+	width: 100%;
+	margin: 0;
+}
+
+div.div1{
+	background-image: url("../img/fon_merch.png");
+	float: left;
+}
+
+.navbar li { /*меню в ряд*/
+	display: inline;}
+
+/*настройки меню*/
+a.menu {
+text-decoration:none; 
+display: inline-block; 
+line-height: 1; 
+color:#000000;/*цвет ссылки*/
+font-size: 24;
+}
+
+a.menu:after {
+   display: block; /*блочный элемент*/
+   content: ""; /*контента в данном блоке не будет*/
+   height: 3px; /*высота линии*/
+   width: 0%; /*начальная ширина элемента (линии)*/
+   background-color:#000000; /*цвет фона элемента*/
+   transition: width 0.4s ease-in-out; /*время анимации*/
+}
+
+a.menu:hover:after, /*изменение размера при наведении*/
+a.menu:focus:after {
+   width: 100%;
+}
+
+ul {
+	position: absolute;
+	left: 400px;
+}
+ul li{
+	margin: 0 15px;
+}
+img.logo{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	
+	width: 100px;
+}
+
+.img-rotation {
+    width: 60px;
+	position: absolute;
+	right: 50px;
+    top: 10px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 15s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}	
+
+footer{
+	background-color: #150900;
+	position: absolute;
+    height: 150px;
+	width: 100%;
+	margin: 0;
+	top: 800px;
+}
+
+ul li.podval{
+	margin: 15px 0;
+		list-style: none;
+}
+
+ul.podv{
+	position: absolute;
+	left: 50px;
+}
+
+
+p.lul{
+	position: absolute;
+	right: 50px;
+	opacity: 0.6;
+	color: white;
+}
+
+a.tur{text-decoration: none;
+color:white;
+font-family: 'press start 2p';
+src: url(https://fonts.cdnfonts.com/css/press-start-2p);
+}
+
+img.all{
+	width:300px;
+	height: 270px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+div.divfutb{
+		position: absolute;
+	left: 200px;
+	top: 110px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+
+div.divshopp{
+position: absolute;
+	left: 600px;
+	top: 110px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+
+div.divnoteb{
+	position: absolute;
+	right: 200px;
+	top: 110px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+
+div.divkruzk{
+	position: absolute;
+	right: 200px;
+	top: 460px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+
+div.divznak{
+	position: absolute;
+	left: 600px;
+	top: 460px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+
+div.divtolst{
+	position: absolute;
+	left: 200px;
+	top: 460px;
+	box-sizing: border-box;
+    width: 320px;
+    height: 325px;
+	background: rgba(255, 255, 255, 0.65);
+    border: 3px solid #067370;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 20px;
+}
+.blin{
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  cursor: pointer;
+}
+
+
+.blin:active {
+    background-color: #0000ff;
+    box-shadow:0 0 0 0 #ffffff; 
+}
+
+.overlay {
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   visibility: hidden;
+	
+/* фон затемнения */
+background-color: rgba(0, 0, 0, 0.7);
+opacity: 0;
+position: fixed;
+cursor: default; 
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+-ms-transition: opacity .5s;
+-o-transition: opacity .5s;
+transition: opacity .5s;
+}
+
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.is-image {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display:block;
+margin: 10px;
+width: 100%;
+height: auto;
+/* скругление углов встроенных картинок */
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+}
+/* встроенные элементы м-медиа, фреймы */
+embed, iframe {
+top: 0;
+right: 0;
+bottom: 0; 
+left: 0; 
+display:block;
+margin: auto;
+min-width: 320px;
+max-width: 600px;
+width: 100%;
+}
+
+.popup h1 { /* заголовок 1 */
+color: #008000;
+text-align: left;
+text-shadow: 0 1px 3px rgba(0,0,0,.3);
+font:24px 'Trebuchet MS', Helvetica, sans-serif;
+font-weight: bold;
+}
+
+.popup h2 { /* заголовок 2 */
+color: #008000;
+text-align: left;
+text-shadow: 0 1px 3px rgba(0,0,0,.3);
+font:22px 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/*** Формируем стили модального окна ***/
+.popup {
+top: 0;
+right: 0;
+left: 0;
+font-size: 14px;
+z-index: 10;
+display: block;
+visibility: hidden;
+margin: 0 auto;
+width: 400px;
+height: 400px;
+	
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+position: fixed;
+padding: 15px;
+border: 1px solid #004521;
+/* скругление углов */
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+background-color:#FFFFFF;
+/* внешняя тень блока */
+-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+-ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+/* полная прозрачность окна, появление при клике */
+opacity: 0;
+/* эффект перехода (появление) */
+-webkit-transition: all ease .5s;
+-moz-transition: all ease .5s;
+-ms-transition: all ease .5s;
+-o-transition: all ease .5s;
+transition: all ease .5s;
+}
+
+/* активируем появление окна и затемнение фона */
+.overlay:target+.popup {
+top: 20%; /* положение окна от верха страницы при появлении */
+visibility: visible;
+opacity: 1; /* убираем прозрачность */
+}
+
+
+/* формируем кнопку закрытия */
+.close {
+position: absolute;
+top: -10px;
+right: -10px;padding: 0;
+width: 20px;
+height: 20px;
+border: 2px solid #ccc;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+background-color: rgba(61, 61, 61, 0.8);
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+line-height: 20px;
+/* задаём значения и эффект перехода при наведении */
+-webkit-transition: all ease .8s;
+-moz-transition: all ease .8s;
+-ms-transition: all ease .8s;
+-o-transition: all ease .8s;
+transition: all ease .8s;
+}
+
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: "X";
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+font-size: 12px;
+}
+
+.close:hover {
+background-color: rgba(252, 20, 0, 0.8);
+/* крутим кнопку при наведении */
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);    
+}

@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/*корректное отображение блоков во весь экран и посередине*/
+	min-width: 100%;
+	margin: 0;
+	
+	font-family: 'Press Start 2P';
+}
+div {
+	/*фон*/
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+	
+	/*настройки самого блока*/
+	position: relative;
+    height: 800px;
+	width: 100%;
+	margin: 0;
+}
+
+div.div1{
+	background-image: url("../img/fon_turntable.jpg");
+	float: left;
+}
+
+.navbar12 li { /*меню в ряд*/
+	display: inline;}
+
+/*настройки меню*/
+a.menu12 {
+text-decoration:none; 
+display: inline-block; 
+line-height: 1; 
+color:#000000;/*цвет ссылки*/
+font-size: 24;
+}
+
+a.menu12:after {
+   display: block; /*блочный элемент*/
+   content: ""; /*контента в данном блоке не будет*/
+   height: 3px; /*высота линии*/
+   width: 0%; /*начальная ширина элемента (линии)*/
+   background-color:#000000; /*цвет фона элемента*/
+   transition: width 0.4s ease-in-out; /*время анимации*/
+}
+
+a.menu12:hover:after, /*изменение размера при наведении*/
+a.menu12:focus:after {
+   width: 100%;
+}
+
+ul {
+	position: absolute;
+	left: 500px;
+}
+ul li{
+	margin: 0 15px;
+}
+img.logo{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	
+	width: 100px;
+}
+
+.img-rotation {
+    width: 60px;
+	position: absolute;
+	right: 50px;
+    top: 10px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 15s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}	
+
+footer{
+	background-color: #150900;
+	
+	position: relative;
+    height: 150px;
+	width: 100%;
+	margin: 0;
+	float: left;
+	clear: left;
+}
+
+ul li.podval{
+	margin: 15px 0;
+		list-style: none;
+}
+
+ul.podv{
+	position: absolute;
+	left: 50px;
+}
+
+
+p.lul{
+	position: absolute;
+	right: 50px;
+	opacity: 0.6;
+	color: white;
+}
+
+a.turnn{text-decoration: none;
+color:white;
+font-family: 'press start 2p';
+src: url(https://fonts.cdnfonts.com/css/press-start-2p);
+}
+
+div.podl{
+	background: rgba(255, 255, 255, 0.95);
+	width: 1200px;
+	height: 650px;
+	position: absolute;
+	left: 150px;
+	top: 100px;
+	
+}
+
+
